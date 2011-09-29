@@ -1123,7 +1123,7 @@ table .headerSortUp.purple, table .headerSortDown.purple {
  * Repeatable UI elements outside the base styles provided from the scaffolding
  * ---------------------------------------------------------------------------- */
 .topbar {
-  height: 20px;
+  height: 30px;
   position: fixed;
   top: 0;
   left: 0;
@@ -1201,19 +1201,22 @@ table .headerSortUp.purple, table .headerSortDown.purple {
   background-color: #002244;
   border:1px solid #222;
   background-repeat: repeat-x;
-  background-image: linear-gradient(bottom, rgb(0,31,61) 9%, rgb(3,43,82) 44%, rgb(0,34,68) 88%);
-background-image: -o-linear-gradient(bottom, rgb(0,31,61) 9%, rgb(3,43,82) 44%, rgb(0,34,68) 88%);
-background-image: -moz-linear-gradient(bottom, rgb(0,31,61) 9%, rgb(3,43,82) 44%, rgb(0,34,68) 88%);
-background-image: -webkit-linear-gradient(bottom, rgb(0,31,61) 9%, rgb(3,43,82) 44%, rgb(0,34,68) 88%);
-background-image: -ms-linear-gradient(bottom, rgb(0,31,61) 9%, rgb(3,43,82) 44%, rgb(0,34,68) 88%);
+ background-image: linear-gradient(bottom, rgb(6,29,51) 0%, rgb(32,97,153) 2%, rgb(14,43,66) 3%, rgb(21,76,148) 99%, rgb(63,137,251) 100%);
+background-image: -o-linear-gradient(bottom, rgb(6,29,51) 0%, rgb(32,97,153) 2%, rgb(14,43,66) 3%, rgb(21,76,148) 99%, rgb(63,137,251) 100%);
+background-image: -moz-linear-gradient(bottom, rgb(6,29,51) 0%, rgb(32,97,153) 2%, rgb(14,43,66) 3%, rgb(21,76,148) 99%, rgb(63,137,251) 100%);
+background-image: -webkit-linear-gradient(bottom, rgb(6,29,51) 0%, rgb(32,97,153) 2%, rgb(14,43,66) 3%, rgb(21,76,148) 99%, rgb(63,137,251) 100%);
+background-image: -ms-linear-gradient(bottom, rgb(6,29,51) 0%, rgb(32,97,153) 2%, rgb(14,43,66) 3%, rgb(21,76,148) 99%, rgb(63,137,251) 100%);
+
 
 background-image: -webkit-gradient(
-	linear,
-	left bottom,
-	left top,
-	color-stop(0.09, rgb(0,31,61)),
-	color-stop(0.44, rgb(3,43,82)),
-	color-stop(0.88, rgb(0,34,68))
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, rgb(6,29,51)),
+    color-stop(0.02, rgb(32,97,153)),
+    color-stop(0.03, rgb(14,43,66)),
+    color-stop(0.99, rgb(21,76,148)),
+    color-stop(1, rgb(63,137,251))
 );
 box-shadow:1px 1px 6px #555;
 }
