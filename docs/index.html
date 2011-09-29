@@ -15,9 +15,11 @@
     <link href="../bootstrap-1.2.0.css" rel="stylesheet">
     <link href="assets/css/docs.css" rel="stylesheet">
     <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="assets/css/jquery-ui.css" rel="stylesheet">
 
     <!-- Le javascript -->
     <script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
     <script src="http://autobahn.tablesorter.com/jquery.tablesorter.min.js"></script>
     <script src="assets/js/google-code-prettify/prettify.js"></script>
     <script src="assets/js/application.js"></script>
@@ -456,7 +458,53 @@
     </div>
   </div><!-- /row -->
 </section>
-
+<!--Accordions
+================================================= -->
+<section id="accordions">
+   <div class="page-header">
+	<h1>Accordions <small>For, collapsible stuff</small></h1>
+   </div>
+   <!-- Accordion Structure -->
+   <div class="row">
+     <div class="span6 columns">
+        <h2>Building Accordions</h2>
+	<p>
+           <pre class="prettyprint linenums">
+&lt;div class="accordion"&gt;
+  &lt;h3&gt;&lt;a href="#"&gt;First Header&lt;/a&gt;&lt;/h3&gt;
+  &lt;div&gt;First Content&lt;div&gt;
+  &lt;h3&gt;&lt;a href="#"&gt;Second Header&lt;/a&gt;&lt;/h3&gt;
+  &lt;div&gt;Second Content&lt;div&gt;
+&lt;/div&gt;
+           </pre>
+        </p>
+      </div>
+      <div class="span10 columns">
+        <h3>Example: Default Accordion</h3>
+	<p>
+		These Accordions are using the jQuery UI framework. For reference on other
+		options and configurations visit 
+		<a href="http://jqueryui.com/demos/accordion/">http://jqueryui.com/demos/accordion/</a>
+	</p>
+	<p>
+	 <div id="accordion">
+	    <div>
+		<h3><a href="#">First header</a></h3>
+	    	<div>First content</div>
+	    </div>
+	    <div>
+	    	<h3><a href="#">Second header</a></h3>
+	    	<div>Second content</div>
+            </div>
+	    <div>
+		<h3><a href="#">Second header</a></h3>
+	    	<div>Second content</div>
+	    </div>
+	</div>	
+	</p>
+      </div>
+    </div>
+</section>
 
 
 <!-- Tables
@@ -557,6 +605,37 @@
 &lt;table class="zebra-striped"&gt;
 ...
 &lt;/table&gt;</pre>
+      <h3>Example: Collapsible Table</h3>
+      <table class="zebra-striped tbl-toggle" id="collapsetable">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Language</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Some</td>
+            <td>One</td>
+            <td>English</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Joe</td>
+            <td>Sixpack</td>
+            <td>English</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Stu</td>
+            <td>Dent</td>
+            <td>Code</td>
+          </tr>
+        </tbody>
+      </table>
       <h3>Example: Zebra-striped w/ TableSorter.js</h3>
       <p>Taking the previous example, we improve the usefulness of our tables by providing sorting functionality via <a href="http://jquery.com">jQuery</a> and the <a href="http://tablesorter.com/docs/">Tablesorter</a> plugin. <strong>Click any column’s header to change the sort.</strong></p>
       <table class="zebra-striped" id="sortTableExample">

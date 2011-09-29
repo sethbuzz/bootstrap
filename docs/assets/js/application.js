@@ -131,4 +131,26 @@ $(document).ready(function(){
 
   });
 
+  //jQuery UI Effects on Tables
+  
+  //Collapsible Table
+  $('.tbl-toggle').children('thead').click(function(){
+	$('.tbl-toggle').children('tbody').slideToggle(400,'swing');
+  });
+  
+  //===== Accordions ======//
+
+  //Default accordion
+  $( "#accordion" ).accordion({
+	header: "> div > h3",
+	fillSpace: true,
+	collapsible: true
+  }).sortable({
+	axis: "y",
+	handle: "h3",
+	stop: function() {
+		stop = true;
+	}
+  });
+  
 });
