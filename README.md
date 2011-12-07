@@ -13,12 +13,16 @@ You can use Twitter Bootstrap in one of two ways: just drop the compiled CSS int
 
 Here's what the LESS version looks like:
 
-    <link rel="stylesheet/less" type="text/css" href="lib/bootstrap.less">
-    <script src="less.js" type="text/javascript"></script>
+``` html
+<link rel="stylesheet/less" type="text/css" href="lib/bootstrap.less">
+<script src="less.js" type="text/javascript"></script>
+```
 
 Or if you prefer, the standard css way:
 
-    <link rel="stylesheet" type="text/css" href="bootstrap-1.2.0.css">
+``` html
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
+```
 
 For more info, refer to the docs!
 
@@ -41,7 +45,7 @@ And constructed with the following guidelines:
 For more information on SemVer, please visit http://semver.org/.
 
 
-Bug Tracker
+Bug tracker
 -----------
 
 Have a bug? Please create an issue here on GitHub!
@@ -49,7 +53,13 @@ Have a bug? Please create an issue here on GitHub!
 https://github.com/twitter/bootstrap/issues
 
 
-Mailing List
+Twitter account
+---------------
+
+Keep up to date on announcements and more by following Bootstrap on Twitter, <a href="http://twitter.com/TwBootstrap">@TwBootstrap</a>.
+
+
+Mailing list
 ------------
 
 Have a question? Ask on our mailing list!
@@ -73,7 +83,7 @@ This is a convenience method for watching your less files and automatically buil
 Watchr is required for this command to run.
 
 
-AUTHORS
+Authors
 -------
 
 **Mark Otto**
@@ -87,19 +97,9 @@ AUTHORS
 + http://github.com/fat
 
 
-Copyright and License
+License
 ---------------------
 
 Copyright 2011 Twitter, Inc.
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this work except in compliance with the License.
-You may obtain a copy of the License in the LICENSE file, or at:
-
-   http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+Licensed under the Apache License, Version 2.0: http://www.apache.org/licenses/LICENSE-2.0
